@@ -1,0 +1,35 @@
+{
+    "name": "vscode-poetry",
+    "displayName": "vscode-poetry",
+    "description": "Support for the Poetry programming language",
+    "version": "0.0.1",
+    "publisher": "poeticAndroid",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "poetry",
+                "aliases": [
+                    "Poetry",
+                    "poetry"
+                ],
+                "extensions": [
+                    ".poem"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "poetry",
+                "scopeName": "source.poetry",
+                "path": "./syntaxes/poetry.tmLanguage.json"
+            }
+        ]
+    }
+}

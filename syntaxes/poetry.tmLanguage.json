@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Poetry",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#controlKeywords"
+    },
+    {
+      "include": "#otherKeywords"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#identifiers"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#doublequotedString"
+    },
+    {
+      "include": "#singlequotedString"
+    },
+    {
+      "include": "#brackets"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.poetry",
+          "begin": "~`",
+          "end": "`"
+        },
+        {
+          "name": "comment.line.character.poetry",
+          "begin": "~",
+          "end": "\n"
+        }
+      ]
+    },
+    "controlKeywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.poetry",
+          "match": "@?\\b(else|elsif|if|return|while)\\b"
+        }
+      ]
+    },
+    "otherKeywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.poetry",
+          "match": "@?\\b(export|export_memory|export_table|func|import|import_memory|import_table|include|var)\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.poetry",
+          "match": "@?\\b(array|binary|false|null|object|true)\\b"
+        }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.poetry",
+          "match": "([\\$A-Z_a-z\\x80-\\xFF][\\$A-Z_a-z0-9.\\\\\\x80-\\xFF]*)"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.poetry",
+          "match": "([0-9]*\\.?[0-9]+)"
+        }
+      ]
+    },
+    "doublequotedString": {
+      "name": "string.quoted.double.poetry",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.poetry",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "singlequotedString": {
+      "name": "string.quoted.single.poetry",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.poetry",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "brackets": {
+      "patterns": [
+        {
+          "name": "keyword.operator.poetry",
+          "match": "([\\{\\(\\[\\;\\]\\)\\}])"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.poetry",
+          "match": "([<>])"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.poetry"
+}

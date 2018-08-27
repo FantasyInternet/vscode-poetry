@@ -4,6 +4,14 @@
     "description": "Support for the Poetry programming language",
     "version": "0.0.1",
     "publisher": "poeticAndroid",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FantasyInternet/vscode-poetry.git"
+    },
+    "bugs": {
+        "url": "https://github.com/FantasyInternet/vscode-poetry/issues"
+    },
+    "homepage": "https://github.com/FantasyInternet/vscode-poetry#readme",
     "engines": {
         "vscode": "^1.26.0"
     },

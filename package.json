@@ -2,7 +2,8 @@
     "name": "vscode-poetry",
     "displayName": "vscode-poetry",
     "description": "Support for the Poetry programming language",
-    "version": "0.0.1",
+    "icon": "images/Poetree_128.png",
+    "version": "0.0.2",
     "publisher": "poeticAndroid",
     "repository": {
         "type": "git",

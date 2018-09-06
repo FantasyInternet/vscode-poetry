@@ -52,7 +52,7 @@
       "patterns": [
         {
           "name": "keyword.control.poetry",
-          "match": "@?\\b(else|elsif|if|return|while)\\b"
+          "match": "@?\\b(else|elsif|for|if|return|while)\\b"
         }
       ]
     },
@@ -60,7 +60,7 @@
       "patterns": [
         {
           "name": "keyword.other.poetry",
-          "match": "@?\\b(export|export_memory|export_table|func|import|import_memory|import_table|include|var)\\b"
+          "match": "@?\\b(export|export_memory|export_table|func|import|import_memory|import_table|in|include|var)\\b"
         }
       ]
     },

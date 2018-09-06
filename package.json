@@ -3,7 +3,7 @@
     "displayName": "vscode-poetry",
     "description": "Support for the Poetry programming language",
     "icon": "images/Poetree_128.png",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "poeticAndroid",
     "repository": {
         "type": "git",

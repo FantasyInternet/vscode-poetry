@@ -38,7 +38,7 @@
       "patterns": [
         {
           "name": "comment.block.poetry",
-          "begin": "~`",
+          "begin": "`",
           "end": "`"
         },
         {

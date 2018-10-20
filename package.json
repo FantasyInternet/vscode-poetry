@@ -3,7 +3,7 @@
     "displayName": "Poetry",
     "description": "Support for the Poetry programming language",
     "icon": "images/Poetree_128.png",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "poeticAndroid",
     "repository": {
         "type": "git",
@@ -14,11 +14,15 @@
     },
     "homepage": "https://github.com/FantasyInternet/vscode-poetry#readme",
     "engines": {
-        "vscode": "^1.26.0"
+        "vscode": "^1.28.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "activationEvents": [
+        "onLanguage:poetry"
+    ],
+    "main": "./out/extension",
     "contributes": {
         "languages": [
             {
@@ -39,6 +43,21 @@
                 "scopeName": "source.poetry",
                 "path": "./syntaxes/poetry.tmLanguage.json"
             }
-        ]
+        ],
+        "commands": []
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
     }
 }

@@ -6,5 +6,5 @@ This extension adds language support for [Poetry](https://github.com/FantasyInte
 Features
 --------
 
- - Syntax Highlighting
-
+ - Syntax highlighting
+ - Symbol provider

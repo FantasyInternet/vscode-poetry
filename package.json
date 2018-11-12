@@ -3,7 +3,7 @@
     "displayName": "Poetry",
     "description": "Support for the Poetry programming language",
     "icon": "images/Poetree_128.png",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "publisher": "poeticAndroid",
     "repository": {
         "type": "git",

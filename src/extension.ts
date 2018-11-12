@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
       let linum = 0
       for (let line of lines) {
         let words = line.split(/\s+/g)
-        if (root_keywords.indexOf(words[0]) != -1) {
+        if (root_keywords.indexOf(words[0]) !== -1) {
           let name = words[1]
           let kind = vscode.SymbolKind.Function
           if (words[0] === "export") name = words[2]
